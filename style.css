@@ -23,9 +23,9 @@ body {
     height: fit-content;
     font-size: 15px;
     border-radius: 20px;
-    box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.59);
-    -webkit-box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.59);
-    -moz-box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.59);
+    box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.45);
+    -webkit-box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.45);
+    -moz-box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.45);
 }
 
 .container_image img {
