@@ -1,0 +1,87 @@
+* {
+    font-family: var(--main-font);
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Light-gray);
+    display: grid;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--White);
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    font-size: 15px;
+    border-radius: 20px;
+    box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.59);
+    -webkit-box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.59);
+    -moz-box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.59);
+}
+
+.container_image img {
+    margin: auto;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.container_text {
+    padding: 1.2rem;
+}
+
+.container_text p,
+.container_text h1 {
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-justify: distribute;
+}
+
+.container_text p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Grayish-blue);
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    letter-spacing: normal;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    line-height: 1.7rem;
+    color: var(--Dark-blue);
+}
+footer {
+    height: fit-content;
+}
+.attribution {
+    position: fixed;
+    bottom: 10px;
+    font-size: 0.8rem;
+    margin: auto 1rem;
+}
+.attribution a {
+  color: var(--link);
+  font-size: 0.9rem;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+    --main-font: "Outfit", sans-serif;
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --link: hsl(228, 45%, 44%);
+}
