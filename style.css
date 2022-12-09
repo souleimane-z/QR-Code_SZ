@@ -11,7 +11,8 @@ body {
     box-sizing: border-box;
     height: 100vh;
 }
-.container {
+/* card rules */
+.card {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,37 +24,30 @@ body {
     height: fit-content;
     font-size: 15px;
     border-radius: 20px;
-    box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.45);
-    -webkit-box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.45);
-    -moz-box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.45);
+    box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.25);
+    -webkit-box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.25);
+    -moz-box-shadow: -5px 10px 29px -15px rgba(0,0,0,0.25);
 }
-
-.container_image img {
+/* image position, width and margins */
+.card_image img {
     margin: auto;
     width: 90%;
     display: block;
     border-radius: 10px;
     margin-top: 1rem;
 }
-
-.container_text {
+/* general rules for the text */
+.card_text {
     padding: 1.2rem;
 }
 
-.container_text p,
-.container_text h1 {
+.card_text p,
+.card_text h1 {
     text-align: center;
     letter-spacing: 0.5px;
     text-justify: distribute;
 }
-
-.container_text p {
-    font-weight: 400;
-    font-size: 14px;
-    color: var(--Grayish-blue);
-    margin-bottom: 1.5rem;
-}
-
+/* title */
 h1 {
     letter-spacing: normal;
     font-weight: 700;
@@ -62,6 +56,15 @@ h1 {
     line-height: 1.7rem;
     color: var(--Dark-blue);
 }
+/* Paragraph */
+.card_text p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Grayish-blue);
+    margin-bottom: 1.5rem;
+}
+
+/* footer component */
 footer {
     height: fit-content;
 }
@@ -75,8 +78,16 @@ footer {
   color: var(--link);
   font-size: 0.9rem;
 }
+.souzz {transition: all .2s ease-in-out;}
+.souzz:hover{
+    color: var(--souzz-hover);
+    transform: scale(1.5);
+}
 
+/* import of the font */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* Vars for the colors and the font */
 :root {
     --main-font: "Outfit", sans-serif;
     --White: hsl(0, 0%, 100%);
@@ -84,4 +95,5 @@ footer {
     --Grayish-blue: hsl(220, 15%, 55%);
     --Dark-blue: hsl(218, 44%, 22%);
     --link: hsl(228, 45%, 44%);
+    --souzz-hover: #ff5823;
 }
