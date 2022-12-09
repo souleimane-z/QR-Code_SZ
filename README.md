@@ -30,7 +30,7 @@ Premier challenge sur Frontend Mentor, le but était de reproduire une image en 
 
 ## My process
 
-I created a simple <div> container with the image, a <h1> title and a <p> paragraph.
+I created a simple "div" container with the image, a "h1" title and a "p" paragraph.
 The rest was created with simple CSS and flexboxes.
 To center the card, I used "position: absolute".
 
